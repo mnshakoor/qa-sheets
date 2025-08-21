@@ -23,3 +23,5 @@ Single page React app that gives you a Power like BI experience with Excel like 
 ## Notes
 - Tableau and Power BI support in this build is schema only. No .pbix or .twbx extraction.
 - Data stays in your browser while testing.
+
+  By MNS Consulting
