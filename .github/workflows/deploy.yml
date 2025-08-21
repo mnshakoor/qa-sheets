@@ -1,5 +1,4 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [ main ]   # change to master if your default branch is master
@@ -22,10 +21,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-      - run: npm install              # use install since there is no lockfile
+      - run: npm install
       - run: npm run build
-      - run: cp dist/index.html dist/404.html   # SPA refresh support
+      - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
